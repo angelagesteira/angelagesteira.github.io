@@ -1,0 +1,494 @@
+*
+{
+    -webkit-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+    box-sizing: border-box;
+    font-family: "Josefin Sans Regular", sans-serif;
+}
+
+html, body
+{
+    height:100%;
+    overflow:auto;
+}
+
+@font-face
+{
+    font-family: 'Josefin Sans Regular';
+    src: url('../fonts/JosefinSans-Regular.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'Josefin Sans Bold';
+    src: url('../fonts/JosefinSans-Bold.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'League Gothic Regular';
+    src: url('../fonts/LeagueGothic-Regular.woff') format('woff');
+}
+
+body, html
+{
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    overflow: auto;
+}
+
+#header
+{
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    padding: 8px 8px 8px 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+#home > div > h1
+{
+    font-size: 48px;
+    margin: 0;
+    -webkit-font-kerning: 8px;
+       -moz-font-kerning: 8px;
+            font-kerning: 8px;
+    letter-spacing: 2px;
+    font-family: "League Gothic Regular", sans-serif !important;
+}
+
+#home h2
+{
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.4;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: -8px;
+}
+
+#home h1, #home h2
+{
+    font-weight: 300;
+}
+
+#home
+{
+    -webkit-box-flex: 8;
+    -webkit-flex: 8 0 auto;
+        -ms-flex: 8 0 auto;
+            flex: 8 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#home div
+{
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+}
+
+#nav
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 14px;
+    max-width: 50%;
+}
+
+#nav a
+{
+    text-align: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    color: black;
+    text-decoration: none;
+    font-family: "Josefin Sans Bold", sans-serif !important;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#nav a:hover, #about a:hover
+{
+    color:  #74C4BF;
+    text-decoration: none;
+}
+
+#social-networks
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+}
+
+#social-networks a
+{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    margin-left: 8px;
+    position: relative;
+    top: -1px;
+}
+
+.mosaic
+{
+    line-height: 0;
+    display: block;
+}
+
+.one-third
+{
+    width: calc(100% / 3 - 8px);
+    margin-right: 12px;
+    float: left;
+}
+
+.one-third:last-child
+{
+    margin-right: 0px;
+}
+
+.mosaic-item
+{
+    position: relative;
+    margin-top: 12px;
+    column-break-inside: avoid;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+#cover > picture > img, .mosaic-item > picture > img
+{
+    width: 100%;
+    height: auto;
+}
+
+.mosaic-item > picture
+{
+    width: 100%;
+    height: auto;
+}
+
+.blur
+{
+    -webkit-filter: contrast(0.3);
+            filter: contrast(0.3);
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 80px;
+    color: white;
+}
+
+.overlay > i
+{
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 31px);
+}
+
+#cover > picture > img
+{
+    width: 100%;
+    height: auto;
+}
+
+/* #cover::after
+{
+    font-family: "FontAwesome";
+    content:  "\f078";
+    position: fixed;
+    left: -50%;
+    margin-left: 100%;
+    bottom: 32px;
+    font-size: 64px;
+    opacity: 0.5;
+} */
+
+article
+{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+}
+
+#about
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+#about > div
+{
+    -webkit-box-flex: 3;
+    -webkit-flex: 3 0 auto;
+        -ms-flex: 3 0 auto;
+            flex: 3 0 auto;
+    padding: 0;
+    width: calc(60% - 48px);
+    padding-right: 48px;
+}
+
+#about>div:last-child
+{
+    width: calc(40% - 48px);
+    -webkit-box-flex: 2;
+    -webkit-flex: 2 0 auto;
+        -ms-flex: 2 0 auto;
+            flex: 2 0 auto;
+}
+#about > div > p
+{
+    font-size: 18px;
+    position: relative;
+    top: -24px;
+}
+
+#about > div > picture > img
+{
+    width: 100%;
+}
+
+#about h1
+{
+    font-family: "League Gothic Regular", sans-serif !important;
+    font-size: 96px;
+    margin: 0;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+
+#regalame img
+{
+    width: 100%;
+}
+
+#regalame h1
+{
+    font-family: "League Gothic Regular", sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+#regalame h3
+{
+    font-size: 24px;
+    margin-top: 0px;
+    font-weight: 300;
+    position: relative;
+    top: -12px;
+}
+
+#regalame p
+{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.contact
+{
+    line-height: 4px;
+    font-size: 16px;
+    right: 0;
+    text-align: right;
+}
+
+.contact  a
+{
+    color: black;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+
+.row
+{
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.one-second
+{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    background-color: #E6DDD5;
+    margin: 0;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: black;
+}
+
+.one-second img
+{
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+}
+
+.one-second:last-child
+{
+    margin-right: 0;
+}
+
+.card-info
+{
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    width: 100%;
+    text-align: center;
+    padding: 32px;
+    font-size: 16px;
+}
+
+.card-info h1
+{
+    font-size: 96px;
+}
+
+.card-info h2
+{
+    font-family: "League Gothic Regular", sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.card-info h3
+{
+    font-size: 24px;
+}
+
+.card-info > .contact
+{
+    text-align: center;
+    line-height: 4px;
+    font-size: 16px;
+    margin-top: 64px;
+}
+.card-info ul
+{
+    text-align: left;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+
+.card-info li
+{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.card-info li:before
+{
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+    font-size: 16px;
+}
+
+.svg
+{
+    width: calc(100% - 48px);
+}
+
+.right
+{
+    width: 100%;
+    text-align: right;
+}
+
+.row
+{
+    background-color: white !important;
+}
+
+.one-second > .row
+{
+    margin-bottom: -24px;
+}
+
+.colophon
+{
+    text-align: center;
+}
+
+footer
+{
+    margin-top: 24px;
+    text-align: center;
+    opacity: 0.5;
+}
