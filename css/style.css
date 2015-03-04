@@ -282,13 +282,13 @@ article
         -ms-flex: 3 0 auto;
             flex: 3 0 auto;
     padding: 0;
-    width: calc(60% - 48px);
-    padding-right: 48px;
+    width: calc(55% - 24px);
+    padding-right: 24px;
 }
 
 #about>div:last-child
 {
-    width: calc(40% - 48px);
+    width: calc(45% - 24px);
     -webkit-box-flex: 2;
     -webkit-flex: 2 0 auto;
         -ms-flex: 2 0 auto;
@@ -310,7 +310,8 @@ article
 {
     font-family: "League Gothic Regular", sans-serif !important;
     font-size: 96px;
-    margin: 0;
+    margin-top: -12px;
+    margin-bottom: 0px;
     font-weight: 550;
     letter-spacing: 2px;
 }
@@ -352,13 +353,12 @@ article
     text-align: right;
 }
 
-.contact  a
+.contact a
 {
     color: black;
     text-decoration: none;
     margin-left: 12px;
 }
-
 
 .row
 {
@@ -381,8 +381,8 @@ article
             flex-basis: 50%;
     background-color: #E6DDD5;
     margin: 0;
-    margin-right: 24px;
-    margin-bottom: 24px;
+    margin-right: 12px;
+    margin-bottom: 12px;
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
